@@ -8,14 +8,14 @@ section {
 }
 
 .hero {
-    background-color: rgb(121, 77, 77);
+    background-color: #1c1d25;
     height: 100vh;
     color: white;
     font-size: 40px;
 }
 
 footer {
-    background-color: rgb(121, 77, 77);
+    background-color: black;
     color: white;
     text-align: center;
     padding: 80px;
@@ -53,6 +53,10 @@ p {
     font-weight: 300;
 }
 
+.subtext {
+    font-size: 15px;
+    font-weight: 300;
+}
 
 .hero-area {
     display: flex;
@@ -85,6 +89,42 @@ p {
 .button:active {
     background-color: #A9A9A9;
     color: #808080;
+}
+
+.socials {
+    padding-bottom: 200px;
+}
+
+.logo {
+    height: 80px;
+    margin: 30px;
+}
+.social {
+    margin: 20px;
+}
+
+.sub-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+
+.headshot {
+    width: 300px;
+    border-radius: 150px;
+    margin-left: 80px;
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
 }
 
 .project-card {
@@ -120,4 +160,50 @@ hr {
 .project-link {
     text-decoration: none;
     color: #ef744b;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus{
+    outline: 0;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .hamburger {
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    ul {
+        display: none;
+        background-color: #2b2c38;
+        margin: 0ppx;
+    }
+
+    ul.show {
+        display: block;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #2b2c38;
+    }
+
+    .logo {
+        display: none;
+    }
 }
